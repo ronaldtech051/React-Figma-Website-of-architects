@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Button from "./ui/Button";
 
 export default function Hero() {
   return (
@@ -36,12 +37,7 @@ function CarouselItem({
   return (
     <div className="relative xl:h-[829px] xl:w-[770px]">
       <Image src={imageUrl} alt={alt} fill objectFit="cover" />
-      <a
-        href="#"
-        className="absolute bottom-0 left-0 flex items-center justify-center bg-white text-xs text-woa-black-700 xl:h-[71px] xl:w-[222px] tracking-[.25em]"
-      >
-        VIEW PROJECT &rarr;
-      </a>
+      <Button absolute variant='white'>VIEW PROJECT &rarr;</Button>
     </div>
   );
 }
