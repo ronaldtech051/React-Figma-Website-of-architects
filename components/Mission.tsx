@@ -4,7 +4,7 @@ import React from "react";
 export default function Mission() {
   return (
     <section className="xl:mt-[120px]">
-      <h2 className="text-[64px] font-light text-woa-white-400">
+      <h2 className="text-[64px] font-light text-woa-white-400 leading-normal">
         Main Focus/Mission Statement
       </h2>
       <div className="grid grid-cols-2 xl:mt-[62px]">

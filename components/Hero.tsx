@@ -36,7 +36,7 @@ function CarouselItem({
 }) {
   return (
     <div className="relative xl:h-[829px] xl:w-[770px]">
-      <Image src={imageUrl} alt={alt} fill objectFit="cover" />
+      <Image src={imageUrl} alt={alt} fill className="object-cover" />
       <Button absolute variant='white'>VIEW PROJECT &rarr;</Button>
     </div>
   );
