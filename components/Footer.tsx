@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 
 export default function Footer() {
   return (
-    <footer className="relative flex w-full flex-col bg-woa-black-800 xl:h-[417px] xl:flex-row  xl:pt-[58px]">
+    <footer className="relative flex w-full flex-col bg-woa-black-800 xl:h-[417px]  xl:flex-row xl:pt-[58px]">
       <Logo />
       <Information />
       <Contacts />
@@ -122,7 +122,7 @@ function Information() {
 
 function Logo() {
   return (
-    <div className="place-self-center pt-[58px] xl:ml-[116px] xl:place-self-auto xl:py-0 mb-[29px] xl:mb-0">
+    <div className="mb-[29px] place-self-center pt-[58px] xl:mb-0 xl:ml-[116px] xl:place-self-auto xl:py-0">
       <Image
         src={WhiteLogo}
         alt="White logo"

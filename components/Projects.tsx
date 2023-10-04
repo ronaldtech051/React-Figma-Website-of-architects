@@ -41,9 +41,11 @@ export default function Projects() {
           widthClass="w-[370px]"
         />
       </div>
-      <Button variant="black" className="mt-[30px] xl:float-right">
-        ALL PROJECTS &rarr;
-      </Button>
+      <div className="flex justify-end w-full">
+        <Button variant="black" className="mt-[30px]">
+          ALL PROJECTS &rarr;
+        </Button>
+      </div>
     </section>
   );
 }
@@ -66,10 +68,10 @@ function ProjectItem({
         href={link}
         className="absolute flex h-full w-full flex-col  p-[20px] text-white opacity-0 transition-opacity hover:bg-zinc-800/90 hover:opacity-100"
       >
-        <span className="line-clamp-2  text-[64px] font-bold leading-none max-w-[270px] min-h-[135px]">
+        <span className="line-clamp-2  min-h-[135px] max-w-[270px] text-[64px] font-bold leading-none">
           {projectName}
         </span>
-        <span className=" text-xs tracking-[.25em] mt-[10px] ">
+        <span className=" mt-[10px] text-xs tracking-[.25em] ">
           VIEW MORE &rarr;
         </span>
       </a>

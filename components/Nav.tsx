@@ -11,7 +11,7 @@ export default function Nav() {
         className="xl:ml-[135px]"
         alt="Black logo"
       />
-      <ul className="flex gap-[46px] xl:ml-[330px]">
+      <ul className="flex gap-[60px] xl:ml-[330px]">
         <NavListItem>MAIN</NavListItem>
         <NavListItem>GALLERY</NavListItem>
         <NavListItem>PROJECTS</NavListItem>

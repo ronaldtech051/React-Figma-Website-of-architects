@@ -7,7 +7,7 @@ export default function Mission() {
       <h2 className="text-[64px] font-light text-woa-white-400 leading-normal">
         Main Focus/Mission Statement
       </h2>
-      <div className="grid grid-cols-2 xl:mt-[62px]">
+      <div className="grid grid-cols-2 xl:mt-[62px] content-start">
         <MissionItem
           missionNumber="1"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat."
@@ -32,7 +32,7 @@ function MissionItem({
   tight?: boolean;
 }) {
   return (
-    <p className="flex h-[140px] items-center justify-center gap-[30px]">
+    <p className="flex h-[140px] items-center  gap-[30px]">
       <span className="text-[200px] font-[900] text-woa-white-300">
         {missionNumber}
       </span>

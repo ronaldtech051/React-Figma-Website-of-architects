@@ -19,8 +19,8 @@ export default function Button({
     "flex items-center justify-center text-xs tracking-[.25em]  xl:h-[71px] xl:w-[222px]",
   );
   return (
-    <a href="#" className={cn(className, localClassName)}>
+    <button className={cn(className, localClassName)}>
       {children}
-    </a>
+    </button>
   );
 }
