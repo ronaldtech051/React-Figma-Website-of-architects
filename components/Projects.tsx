@@ -42,7 +42,7 @@ export default function Projects() {
         />
       </div>
       <div className="flex justify-end w-full">
-        <Button variant="black" className="mt-[30px]">
+        <Button variant="black" className="mt-[30px]" type="link" href="/projects">
           ALL PROJECTS &rarr;
         </Button>
       </div>

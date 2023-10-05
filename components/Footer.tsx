@@ -11,6 +11,7 @@ import linkedinIcon from "@/public/socials/linkedin.svg";
 import pinterestIcon from "@/public/socials/pinterest.svg";
 import twitterIcon from "@/public/socials/twitter.svg";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -110,11 +111,17 @@ function Information() {
     <FooterListContainer className="xl:ml-[99px]">
       <h3 className="text-base font-bold">Information</h3>
       <ul className="flex flex-col gap-5">
-        <li className="text-sm tracking-wide">Main</li>
-        <li className="text-sm tracking-wide">Gallery</li>
-        <li className="text-sm tracking-wide">Projects</li>
-        <li className="text-sm tracking-wide">Certifications</li>
-        <li className="text-sm tracking-wide">Contacts</li>
+        <li className="text-sm tracking-wide">
+          <Link href="/">Main</Link>
+        </li>
+        <li className="text-sm tracking-wide">
+          <Link href="/gallery">Gallery</Link></li>
+        <li className="text-sm tracking-wide">
+          <Link href="/projects">Projects</Link></li>
+        <li className="text-sm tracking-wide">
+          <Link href="/certifications">Certifications</Link></li>
+        <li className="text-sm tracking-wide">
+          <Link href="/contacts">Contacts</Link></li>
       </ul>
     </FooterListContainer>
   );
