@@ -8,12 +8,14 @@ export default function PageButtons({
   prevPage,
   nextPage,
   url,
+  scroll = false,
 }: {
   p: number;
   totalPages: number;
   prevPage: number | null;
   nextPage: number | null;
   url: string;
+  scroll?: boolean;
 }) {
   return (
     <div className="mt-[60px] flex gap-6">
@@ -40,7 +42,7 @@ export default function PageButtons({
           { "cursor-not-allowed bg-[#f9f9f9]": !nextPage },
         )}
         href={nextPage ? `/${url}/?p=${nextPage}` : ""}
-        scroll={false}
+        scroll={scroll}
       >
         &rarr;
       </Link>

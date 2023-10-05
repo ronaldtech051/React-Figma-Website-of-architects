@@ -105,7 +105,7 @@ export default function Gallery() {
   p = Number(p);
 
   const PER_PAGE = 10;
-  const totalPages = Math.round(images.length / PER_PAGE);
+  const totalPages = Math.ceil(images.length / PER_PAGE);
   const { prevPage, nextPage } = getPaginationInfo(p, images.length, PER_PAGE);
 
   const gallery = paginate(images, p, PER_PAGE);
@@ -127,13 +127,7 @@ export default function Gallery() {
           })}
         </>
       </div>
-      <PageButtons
-        nextPage={nextPage}
-        prevPage={prevPage}
-        p={p}
-        totalPages={totalPages}
-        url="gallery"
-      />
+      <PageButtons {...{ nextPage, prevPage, p, totalPages, url: "gallery" }} />
     </main>
   );
 }
