@@ -18,10 +18,10 @@ export default function PageButtons({
   scroll?: boolean;
 }) {
   return (
-    <div className="mt-[60px] flex gap-6">
-      <p className="flex items-center gap-8 text-[24px]">
+    <div className="mt-[60px] flex gap-6 lg:justify-start justify-center">
+      <p className="flex items-center gap-8 lg:text-[24px] text-lg">
         <span className="text-[#333]">{String(p).padStart(2, "0")}</span>
-        <span className="text-5xl font-extralight text-[#e0e0e0]">/</span>
+        <span className="lg:text-5xl text-4xl font-extralight text-[#e0e0e0]">/</span>
         <span className="text-woa-white-400">
           {String(totalPages).padStart(2, "0")}
         </span>

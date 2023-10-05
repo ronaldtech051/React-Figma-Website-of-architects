@@ -113,9 +113,9 @@ export default function Gallery() {
 
   const gallery = paginate(images, p, PER_PAGE);
   return (
-    <main className="w-full bg-white pb-[120px] pt-[64px] xl:px-[135px] ">
+    <main className="w-full bg-white px-4 lg:pb-[120px] pb-[60px] lg:pt-[64px] lg:px-[135px] ">
       <PageTitle>Photo Gallery</PageTitle>
-      <div className="mt-[32px] grid grid-cols-5 grid-rows-2 gap-[30px] border-t border-t-black/10 pt-[32px]">
+      <div className="mt-[32px] grid grid-cols-2 border-t border-t-black/10 pt-[32px] lg:grid-cols-5 lg:grid-rows-2 lg:gap-[30px]">
         <>
           {gallery.map((item, index) => {
             return (

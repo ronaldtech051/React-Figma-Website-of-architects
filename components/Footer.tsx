@@ -15,7 +15,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative flex w-full flex-col bg-woa-black-800 xl:h-[417px]  xl:flex-row xl:pt-[58px]">
+    <footer className="relative flex w-full flex-col bg-woa-black-800 lg:h-[417px] lg:flex-row lg:pt-[58px]">
       <Logo />
       <Information />
       <Contacts />
@@ -27,7 +27,7 @@ export default function Footer() {
 
 function Socials() {
   return (
-    <FooterListContainer className="xl:ml-[204px]">
+    <FooterListContainer className="lg:ml-[204px]">
       <h3 className="text-base font-bold">Social Media</h3>
       <ul className="flex flex-row items-center gap-10">
         <li className="text-sm tracking-wide">
@@ -69,7 +69,7 @@ function Socials() {
 
 function Contacts() {
   return (
-    <FooterListContainer className="xl:ml-[157px]">
+    <FooterListContainer className="lg:ml-[157px]">
       <h3 className="text-base font-bold">Contacts</h3>
       <ul className="flex flex-col gap-6">
         <li className="flex  items-center gap-6 text-sm tracking-wide">
@@ -108,20 +108,24 @@ function Contacts() {
 
 function Information() {
   return (
-    <FooterListContainer className="xl:ml-[99px]">
+    <FooterListContainer className="lg:ml-[99px]">
       <h3 className="text-base font-bold">Information</h3>
       <ul className="flex flex-col gap-5">
         <li className="text-sm tracking-wide">
           <Link href="/">Main</Link>
         </li>
         <li className="text-sm tracking-wide">
-          <Link href="/gallery">Gallery</Link></li>
+          <Link href="/gallery">Gallery</Link>
+        </li>
         <li className="text-sm tracking-wide">
-          <Link href="/projects">Projects</Link></li>
+          <Link href="/projects">Projects</Link>
+        </li>
         <li className="text-sm tracking-wide">
-          <Link href="/certifications">Certifications</Link></li>
+          <Link href="/certifications">Certifications</Link>
+        </li>
         <li className="text-sm tracking-wide">
-          <Link href="/contacts">Contacts</Link></li>
+          <Link href="/contacts">Contacts</Link>
+        </li>
       </ul>
     </FooterListContainer>
   );
@@ -129,7 +133,7 @@ function Information() {
 
 function Logo() {
   return (
-    <div className="mb-[29px] place-self-center pt-[58px] xl:mb-0 xl:ml-[116px] xl:place-self-auto xl:py-0">
+    <div className="mb-[29px] place-self-center pt-[58px] lg:mb-0 lg:ml-[116px] lg:place-self-auto lg:py-0">
       <Image
         src={WhiteLogo}
         alt="White logo"
@@ -164,7 +168,7 @@ function FooterListContainer({
     <div
       className={cn(
         className,
-        "my-[29px] flex flex-col gap-6 border-t border-white/10 pl-14 pt-[29px] text-white xl:my-0 xl:border-0 xl:py-0 xl:pl-0",
+        "my-[29px] flex flex-col gap-6 border-t border-white/10 pl-14 pt-[29px] text-white lg:my-0 lg:border-0 lg:py-0 lg:pl-0",
       )}
     >
       {children}
