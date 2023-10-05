@@ -37,7 +37,6 @@ const images = [
   {
     imageUrl: "/gallery/Rectangle 31.jpg",
   },
-
   {
     imageUrl: "/gallery/Rectangle 31.jpg",
   },
@@ -68,7 +67,6 @@ const images = [
   {
     imageUrl: "/gallery/Rectangle 31.jpg",
   },
-
   {
     imageUrl: "/gallery/Rectangle 30.jpg",
   },
@@ -133,7 +131,6 @@ export default function Gallery() {
   const PER_PAGE = 10;
   const totalPages = Math.round(images.length / PER_PAGE);
   const { prevPage, nextPage } = getPaginationInfo(p, images.length, PER_PAGE);
-  console.log({ prevPage, nextPage });
 
   const gallery = paginate(images, p, PER_PAGE);
   return (
