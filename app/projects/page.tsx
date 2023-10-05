@@ -98,7 +98,7 @@ export default function Page() {
   return (
     <main className="w-full bg-white pb-[120px] pt-[64px] xl:px-[135px]">
       <PageTitle>Our Projects</PageTitle>
-      <section className="mt-[60px] flex flex-col gap-[60px]">
+      <section className="border-t border-t-black/10 pt-[32px] mt-[32px] flex flex-col gap-[60px]">
         <>
           {paginatedProjects.map((item, index) => {
             return (
@@ -111,7 +111,13 @@ export default function Page() {
                     {item.title}
                   </h2>
                   <p className="font-light xl:w-[400px]">{item.textPreview}</p>
-                  <Button variant="white">VIEW MORE &rarr;</Button>
+                  <Button
+                    variant="white"
+                    type="link"
+                    href={`/projects/${item.slug}`}
+                  >
+                    VIEW MORE &rarr;
+                  </Button>
                 </div>
               </div>
             );

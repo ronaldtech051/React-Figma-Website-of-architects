@@ -97,6 +97,9 @@ const images = [
   {
     imageUrl: "/gallery/Rectangle 31.jpg",
   },
+  {
+    imageUrl: "/gallery/Rectangle 29.jpg",
+  },
 ];
 
 export default function Gallery() {
@@ -110,9 +113,9 @@ export default function Gallery() {
 
   const gallery = paginate(images, p, PER_PAGE);
   return (
-    <main className="w-full bg-white pb-[120px] pt-[64px] xl:px-[135px]">
+    <main className="w-full bg-white pb-[120px] pt-[64px] xl:px-[135px] ">
       <PageTitle>Photo Gallery</PageTitle>
-      <div className="mt-[64px] grid grid-cols-5 grid-rows-2 gap-[30px]">
+      <div className="mt-[32px] grid grid-cols-5 grid-rows-2 gap-[30px] border-t border-t-black/10 pt-[32px]">
         <>
           {gallery.map((item, index) => {
             return (
