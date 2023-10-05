@@ -14,15 +14,17 @@ export default function Nav() {
     return pathname === url ? true : false;
   }
   return (
-    <nav className="flex h-[102px] w-full items-center bg-white lg:pl-0 pl-4">
-      <Image
-        src={logoBlack}
-        width={logoBlack.width}
-        height={logoBlack.height}
-        className="xl:ml-[135px]"
-        alt="Black logo"
-      />
-      <ul className="gap-[60px] xl:ml-[330px] lg:flex hidden">
+    <nav className="flex h-[102px] w-full items-center bg-white pl-4 lg:pl-0">
+      <Link href="/" className="lg:ml-[135px]">
+        <Image
+          src={logoBlack}
+          width={logoBlack.width}
+          height={logoBlack.height}
+          className=""
+          alt="Black logo"
+        />
+      </Link>
+      <ul className="hidden xl:gap-[60px] gap-[32px] lg:flex xl:ml-[330px] lg:ml-[135px]">
         <NavListItem href="/" active={isLinkActive("/", pathname)}>
           MAIN
         </NavListItem>
