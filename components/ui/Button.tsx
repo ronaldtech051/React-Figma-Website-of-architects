@@ -21,7 +21,7 @@ export default function Button({
     { "absolute bottom-0 left-0": absolute },
     { "bg-white  text-woa-black-700": variant === "white" },
     { "text-white  bg-woa-black-700": variant === "black" },
-    "flex items-center justify-center text-xs tracking-[.25em]  xl:h-[71px] xl:w-[222px]",
+    "flex items-center justify-center text-xs tracking-[.25em]  h-[71px] w-[222px]",
   );
   return type === "button" ? (
     <button className={cn(className, localClassName)} type={type}>

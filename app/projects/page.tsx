@@ -96,21 +96,22 @@ export default function Page() {
 
   const paginatedProjects = paginate(projects, p, PER_PAGE);
   return (
-    <main className="w-full bg-white pb-[120px] pt-[64px] xl:px-[135px]">
+
+    <main className="w-full bg-white pb-[120px] lg:pt-[64px] lg:px-[135px] px-4">
       <PageTitle>Our Projects</PageTitle>
       <section className="border-t border-t-black/10 pt-[32px] mt-[32px] flex flex-col gap-[60px]">
         <>
           {paginatedProjects.map((item, index) => {
             return (
-              <div key={index} className="flex flex-col xl:flex-row">
-                <div className="relative xl:h-[435px] xl:w-[670px] ">
-                  <Image src={item.imageUrl} alt={item.title} fill />
+              <div key={index} className="flex flex-col lg:flex-row">
+                <div className="relative lg:h-[435px] lg:w-[670px] h-[218px] ">
+                  <Image src={item.imageUrl} alt={item.title} fill className="object-cover" />
                 </div>
-                <div className="flex flex-col bg-woa-white-100 p-[30px] xl:gap-[64px]">
-                  <h2 className="text-[40px] font-light text-woa-white-400">
+                <div className="flex flex-col bg-woa-white-100 p-[30px] lg:gap-[64px] gap-4">
+                  <h2 className="text-[40px] font-light text-woa-white-400 lg:leading-normal leading-none">
                     {item.title}
                   </h2>
-                  <p className="font-light xl:w-[400px]">{item.textPreview}</p>
+                  <p className="font-light lg:w-[400px]">{item.textPreview}</p>
                   <Button
                     variant="white"
                     type="link"
