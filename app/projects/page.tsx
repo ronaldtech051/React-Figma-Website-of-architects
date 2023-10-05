@@ -96,14 +96,14 @@ export default function Page() {
 
   const paginatedProjects = paginate(projects, p, PER_PAGE);
   return (
-    <main className="w-full bg-white px-4 pb-[120px] lg:px-[135px] lg:pt-[64px] pt-[32px] ">
+    <main className="w-full bg-white px-4 pb-[120px] pt-[32px] lg:px-[135px] lg:pt-[64px] ">
       <PageTitle>Our Projects</PageTitle>
-      <section className="mt-[32px] flex flex-col gap-[60px] border-t border-t-black/10 pt-[32px]">
+      <section className="mt-[32px] flex flex-col lg:gap-[60px] gap-[32px] border-t border-t-black/10 pt-[32px]">
         <>
           {paginatedProjects.map((item, index) => {
             return (
-              <div key={index} className="flex flex-col lg:flex-row">
-                <div className="relative h-[218px] lg:h-[435px] lg:w-[670px] ">
+              <div key={index} className="flex flex-col md:flex-row">
+                <div className="relative h-[218px] md:h-[320px] md:w-1/2 lg:h-[435px] lg:w-[670px] ">
                   <Image
                     src={item.imageUrl}
                     alt={item.title}
@@ -112,11 +112,13 @@ export default function Page() {
                     sizes="(max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
-                <div className="flex flex-col gap-4 bg-woa-white-100 p-[30px] lg:gap-[64px]">
+                <div className="flex flex-col gap-4 bg-woa-white-100 p-4 md:w-1/2 md:p-[30px] lg:gap-[64px]">
                   <h2 className="text-[40px] font-light leading-none text-woa-white-400 lg:leading-normal">
                     {item.title}
                   </h2>
-                  <p className="font-light lg:w-[400px]">{item.textPreview}</p>
+                  <p className="line-clamp-5 font-light lg:w-[400px]">
+                    {item.textPreview}
+                  </p>
                   <Button
                     variant="white"
                     type="link"
