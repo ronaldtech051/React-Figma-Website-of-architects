@@ -14,7 +14,7 @@ export default function Nav() {
     return pathname === url ? true : false;
   }
   return (
-    <nav className="flex h-[102px] w-full items-center bg-white">
+    <nav className="flex h-[102px] w-full items-center bg-white lg:pl-0 pl-4">
       <Image
         src={logoBlack}
         width={logoBlack.width}
@@ -22,7 +22,7 @@ export default function Nav() {
         className="xl:ml-[135px]"
         alt="Black logo"
       />
-      <ul className="flex gap-[60px] xl:ml-[330px]">
+      <ul className="gap-[60px] xl:ml-[330px] lg:flex hidden">
         <NavListItem href="/" active={isLinkActive("/", pathname)}>
           MAIN
         </NavListItem>
