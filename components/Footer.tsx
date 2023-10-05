@@ -15,7 +15,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative flex w-full flex-col bg-woa-black-800 lg:h-[417px] lg:flex-row lg:pt-[58px]">
+    <footer className="relative flex w-full flex-col bg-woa-black-800 xl:h-[417px] lg:flex-row lg:pt-[58px] md:max-xl:grid md:max-xl:grid-flow-row md:max-xl:grid-cols-2 lg:px-[135px] lg:gap-y-16 xl:px-0">
       <Logo />
       <Information />
       <Contacts />
@@ -27,7 +27,7 @@ export default function Footer() {
 
 function Socials() {
   return (
-    <FooterListContainer className="lg:ml-[204px]">
+    <FooterListContainer className="xl:ml-[204px]">
       <h3 className="text-base font-bold">Social Media</h3>
       <ul className="flex flex-row items-center gap-10">
         <li className="text-sm tracking-wide">
@@ -69,7 +69,7 @@ function Socials() {
 
 function Contacts() {
   return (
-    <FooterListContainer className="lg:ml-[157px]">
+    <FooterListContainer className="xl:ml-[157px]">
       <h3 className="text-base font-bold">Contacts</h3>
       <ul className="flex flex-col gap-6">
         <li className="flex  items-center gap-6 text-sm tracking-wide">
@@ -108,7 +108,7 @@ function Contacts() {
 
 function Information() {
   return (
-    <FooterListContainer className="lg:ml-[99px]">
+    <FooterListContainer className="xl:ml-[99px]">
       <h3 className="text-base font-bold">Information</h3>
       <ul className="flex flex-col gap-5">
         <li className="text-sm tracking-wide">
@@ -133,7 +133,7 @@ function Information() {
 
 function Logo() {
   return (
-    <div className="mb-[29px] place-self-center pt-[58px] lg:mb-0 lg:ml-[116px] lg:place-self-auto lg:py-0">
+    <div className="mb-[29px] place-self-center pt-[58px] lg:mb-0 xl:ml-[116px] xl:place-self-auto lg:py-0">
       <Image
         src={WhiteLogo}
         alt="White logo"
@@ -147,7 +147,7 @@ function Logo() {
 function Copyright() {
   return (
     <>
-      <div className="mt-[29px] h-[70px] lg:hidden"></div>
+      <div className="mt-[29px] h-[70px] xl:hidden"></div>
       <div className="absolute bottom-0 left-0 flex h-[70px] w-full items-center justify-center border-t border-t-white/10 ">
         <p className="text-xs text-woa-black-900/50 ">
           © 2021 All Rights Reserved
@@ -168,7 +168,7 @@ function FooterListContainer({
     <div
       className={cn(
         className,
-        "my-[29px] flex flex-col gap-6 border-t border-white/10 pl-14 pt-[29px] text-white lg:my-0 lg:border-0 lg:py-0 lg:pl-0",
+        "my-[29px] flex flex-col gap-6 border-t border-white/10 pl-14 pt-[29px] text-white lg:my-0 xl:border-0 xl:py-0 lg:pl-0",
       )}
     >
       {children}
