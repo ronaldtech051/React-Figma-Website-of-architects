@@ -9,7 +9,7 @@ const MapComponent = dynamic(() => import("../../components/ui/Map"), {
 export default function page() {
   return (
     <main className="relative flex w-full flex-col overflow-hidden bg-white lg:pb-[120px] pb-[64px] lg:pt-[64px] pt-[32px] lg:h-[700px] lg:flex-row lg:px-[135px]">
-      <section className="flex flex-col lg:gap-8 gap-4 lg:mt-[64px] px-4 pb-8">
+      <section className="flex flex-col lg:gap-8 gap-4 lg:mt-[64px] lg:px-0 px-4 md:px-12 pb-8">
         <PageTitle>Contact Information</PageTitle>
         <p className="text-base font-light first-line:text-[18px] first-line:font-bold">
           Company Name<br></br>
@@ -19,7 +19,7 @@ export default function page() {
         <p className="font-light">sampleemail@gmail.com</p>
         <Button variant="black">CONTACT US</Button>
       </section>
-      <section className="right-0 h-[504px] w-[790px] overflow-hidden border border-black lg:absolute">
+      <section className="xl:right-0 lg:-right-2 h-[504px] w-[790px] overflow-hidden border border-black lg:absolute">
         <MapComponent />
       </section>
     </main>

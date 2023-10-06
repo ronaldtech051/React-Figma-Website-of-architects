@@ -15,7 +15,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative flex w-full flex-col bg-woa-black-800 xl:h-[417px] lg:flex-row lg:pt-[58px] md:max-xl:grid md:max-xl:grid-flow-row md:max-xl:grid-cols-2 lg:px-[135px] lg:gap-y-16 xl:px-0">
+    <footer className="relative flex w-full flex-col bg-woa-black-800 md:max-xl:grid md:max-xl:grid-flow-row md:max-xl:grid-cols-2 lg:flex-row lg:gap-y-16 lg:px-[135px] lg:pt-[58px] xl:h-[417px] xl:px-0">
       <Logo />
       <Information />
       <Contacts />
@@ -133,7 +133,7 @@ function Information() {
 
 function Logo() {
   return (
-    <div className="mb-[29px] place-self-center pt-[58px] lg:mb-0 xl:ml-[116px] xl:place-self-auto lg:py-0">
+    <div className="mb-[29px] place-self-center pt-[58px] lg:mb-0 lg:py-0 xl:ml-[116px] xl:place-self-auto">
       <Image
         src={WhiteLogo}
         alt="White logo"
@@ -168,7 +168,7 @@ function FooterListContainer({
     <div
       className={cn(
         className,
-        "my-[29px] flex flex-col gap-6 border-t border-white/10 pl-14 pt-[29px] text-white lg:my-0 xl:border-0 xl:py-0 lg:pl-0",
+        "my-[29px] flex flex-col gap-6 border-t border-white/10 pl-14 pt-[29px] text-white lg:my-0 lg:pl-0 xl:border-0 xl:py-0",
       )}
     >
       {children}
