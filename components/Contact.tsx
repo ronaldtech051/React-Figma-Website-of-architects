@@ -5,11 +5,11 @@ import Button from "./ui/Button";
 
 export default function Contact() {
   return (
-    <div className="xl:mt-[120px]">
-      <h2 className="font-light leading-none text-woa-white-400 xl:text-[64px] ">
+    <div className="xl:mt-[120px] mt-[60px] lg:px-0 px-16">
+      <h2 className="font-light leading-none text-woa-white-400 lg:text-[64px] text-5xl ">
         Contact Us
       </h2>
-      <div className="mt-[22px] flex gap-[30px]">
+      <div className="mt-[22px] flex lg:gap-[30px] gap-2">
         <form action="" className="flex flex-col gap-[10px]">
           <input
             type="text"
@@ -36,7 +36,7 @@ export default function Contact() {
             className="h-[147px] w-[391px] resize-none bg-woa-white-200 pl-[21px] pt-[14px]"
             placeholder="Message *"
           ></textarea>
-          <Button variant="black" className="xl:mt-[77px]">
+          <Button variant="black" className="xl:mt-[77px] mt-9">
             SEND EMAIL &rarr;
           </Button>
         </form>
@@ -45,6 +45,7 @@ export default function Contact() {
             src={image}
             alt="Guy holding a phone to his ear"
             fill
+            sizes="50vw"
             className="object-cover"
           />
         </div>

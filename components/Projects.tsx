@@ -5,11 +5,11 @@ import { cn } from "@/lib/utils";
 
 export default function Projects() {
   return (
-    <section className="xl:mt-[120px]">
-      <h2 className="font-light leading-normal text-woa-white-400 xl:text-[64px]">
+    <section className="mt-[60px] xl:mt-[120px] lg:px-0 px-16">
+      <h2 className="font-light leading-normal text-woa-white-400 lg:text-[64px] text-[46px]">
         Our Projects
       </h2>
-      <div className="mt-[60px] flex flex-wrap gap-[30px]">
+      <div className="mt-8 flex flex-wrap gap-[30px] xl:mt-[60px]">
         <ProjectItem
           imageUrl="/projects/projectitem1.jpg"
           projectName="Sample Project 1"
@@ -41,8 +41,13 @@ export default function Projects() {
           widthClass="w-[370px]"
         />
       </div>
-      <div className="flex justify-end w-full">
-        <Button variant="black" className="mt-[30px]" type="link" href="/projects">
+      <div className="flex w-full justify-end">
+        <Button
+          variant="black"
+          className="mt-[30px]"
+          type="link"
+          href="/projects"
+        >
           ALL PROJECTS &rarr;
         </Button>
       </div>
@@ -62,8 +67,14 @@ function ProjectItem({
   widthClass?: string;
 }) {
   return (
-    <div className={cn(widthClass, "relative h-[255px]")}>
-      <Image src={imageUrl} alt={projectName} fill />
+    <div className={cn(widthClass, "relative h-[255px] flex-auto")}>
+      <Image
+        src={imageUrl}
+        alt={projectName}
+        fill
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
       <a
         href={link}
         className="absolute flex h-full w-full flex-col  p-[20px] text-white opacity-0 transition-opacity hover:bg-zinc-800/90 hover:opacity-100"
