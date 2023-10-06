@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
-import Image from "next/image";
-import Button from "./Button";
+import { cn } from "@/lib/utils";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react"; // import from 'keen-slider/react.es' for to get an ES module
-import { cn } from "@/lib/utils";
+import Image from "next/image";
+import React, { useState } from "react";
+import Button from "./Button";
 
 export default function Carousel() {
   const [currentSlide, setCurrentSlide] = React.useState(0);
@@ -23,7 +23,7 @@ export default function Carousel() {
 
   return (
     <>
-      <div ref={sliderRef} className="keen-slider xl:ml-[110px] lg:ml-[55px]">
+      <div ref={sliderRef} className="keen-slider lg:ml-[55px] xl:ml-[110px]">
         <CarouselItem
           imageUrl="/projects/item1.jpg"
           alt="..."
@@ -37,7 +37,7 @@ export default function Carousel() {
           className="keen-slider__slide"
         />
       </div>
-      <div className="absolute xl:mt-[540px] lg:mt-[380px] md:mt-[290px] mt-[120px]">
+      <div className="absolute mt-[120px] md:mt-[290px] lg:mt-[380px] xl:mt-[540px]">
         <button
           className="h-[53px] w-[53px] border border-woa-white-300 bg-white p-[14px] "
           onClick={(e: any) =>
@@ -47,15 +47,17 @@ export default function Carousel() {
           &larr;
         </button>
         <button
-          className="h-[53px] w-[53px] border border-woa-white-300 bg-white p-[14px] ml-6"
+          className="ml-6 h-[53px] w-[53px] border border-woa-white-300 bg-white p-[14px]"
           onClick={(e: any) =>
             e.stopPropagation() || instanceRef.current?.next()
           }
         >
           &rarr;
         </button>
-        <p className="flex items-center gap-8 text-lg lg:text-[24px] xl:mt-24 lg:mt-16 md:mt-6">
-          <span className="text-[#333]">{String(currentSlide + 1).padStart(2, "0")}</span>
+        <p className="flex items-center gap-8 text-lg md:mt-6 lg:mt-16 lg:text-[24px] xl:mt-24">
+          <span className="text-[#333]">
+            {String(currentSlide + 1).padStart(2, "0")}
+          </span>
           <span className="text-4xl font-extralight text-[#e0e0e0] lg:text-5xl">
             /
           </span>
@@ -83,7 +85,7 @@ function CarouselItem({
     <div
       className={cn(
         className,
-        "relative h-[410px] md:w-[410px]  lg:h-[580px] lg:w-[580px] xl:h-[829px] xl:w-[770px]",
+        "relative h-[410px] w-auto md:w-[410px] lg:h-[580px] lg:w-[580px] xl:h-[829px] xl:w-[770px]",
       )}
     >
       <Image
@@ -92,6 +94,7 @@ function CarouselItem({
         fill
         className="object-cover"
         sizes="70vw"
+        priority
       />
       <Button absolute variant="white">
         VIEW PROJECT &rarr;
