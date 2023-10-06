@@ -15,7 +15,7 @@ const htmlContent = `
 
 export default function page() {
   return (
-    <main className="w-full bg-white lg:pb-[120px] pb-[60px] md:px-12 lg:px-16 lg:pt-[64px] pt-[32px] lg:px-[135px] px-4">
+    <main className="w-full bg-white lg:pb-[120px] pb-[60px] md:px-12 lg:px-16 lg:pt-[64px] pt-[32px] xl:px-[135px] px-4">
       <PageTitle>Sample Project</PageTitle>
       <section
         className="lg:mt-[64px] mt-[32px] w-full flex lg:gap-6 gap-4 flex-col font-light"

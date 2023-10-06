@@ -15,7 +15,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative flex w-full flex-col bg-woa-black-800 md:max-xl:grid md:max-xl:grid-flow-row md:max-xl:grid-cols-2 lg:flex-row lg:gap-y-16 lg:px-[135px] lg:pt-[58px] xl:h-[417px] xl:px-0">
+    <footer className="relative flex w-full flex-col bg-woa-black-800 md:max-xl:grid md:max-xl:grid-flow-row md:max-xl:grid-cols-2 lg:flex-row lg:gap-y-16 lg:px-16 lg:pt-[58px] xl:h-[417px] xl:px-0">
       <Logo />
       <Information />
       <Contacts />
