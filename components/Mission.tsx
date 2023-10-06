@@ -33,7 +33,7 @@ function MissionItem({
 }) {
   return (
     <p className="flex h-[140px] items-center gap-4 lg:gap-[30px]">
-      <span className="text-[200px] font-[900] text-woa-white-300">
+      <span className="md:text-[200px] text-[170px] font-[900] text-woa-white-300">
         {missionNumber}
       </span>
       <span

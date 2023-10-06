@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "clsx": "^2.0.0",
+    "keen-slider": "^6.8.6",
     "leaflet-defaulticon-compatibility": "^0.1.2",
     "next": "13.5.4",
     "react": "^18",

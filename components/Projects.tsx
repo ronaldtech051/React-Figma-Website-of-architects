@@ -9,7 +9,7 @@ export default function Projects() {
       <h2 className="font-light leading-normal text-woa-white-400 lg:text-[64px] text-[46px]">
         Our Projects
       </h2>
-      <div className="mt-8 flex flex-wrap md:gap-[30px] gap-4 xl:mt-[60px]">
+      <div className="md:mt-8 mt-4 flex flex-wrap md:gap-[30px] gap-4 xl:mt-[60px]">
         <ProjectItem
           imageUrl="/projects/projectitem1.jpg"
           projectName="Sample Project 1"
