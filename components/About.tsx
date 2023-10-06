@@ -8,8 +8,8 @@ import image3 from "@/public/about/image3.jpg";
 
 export default function About() {
   return (
-    <section className="mt-[60px] flex h-auto gap-[30px] bg-woa-white-100 p-8 lg:mx-0 md:mx-16 md:h-[380px] lg:h-[435px] xl:mt-[120px] xl:p-[30px]">
-      <div className="relative grid grid-flow-col grid-cols-2 grid-rows-2 gap-6 lg:gap-[30px] xl:pl-[70px]">
+    <section className="mx-4 mt-[60px] flex h-auto gap-[30px] bg-woa-white-100 md:p-8 p-4 md:mx-16 md:h-[380px] lg:mx-0 lg:h-[435px] xl:mt-[120px] xl:p-[30px]">
+      <div className="relative hidden grid-flow-col grid-cols-2 grid-rows-2 gap-6 md:grid lg:gap-[30px] xl:pl-[70px]">
         <Image src={image1} width={270} height={265} alt="..." />
         <Image
           src={image3}
@@ -26,7 +26,7 @@ export default function About() {
           alt="..."
         />
       </div>
-      <div className="w-1/2 xl:w-[400px] xl:pr-[10px]">
+      <div className="w-full md:w-1/2 xl:w-[400px] xl:pr-[10px]">
         <h2 className="pb-4 text-6xl text-[46px] font-light leading-none text-woa-white-400 lg:text-[64px]">
           About
         </h2>

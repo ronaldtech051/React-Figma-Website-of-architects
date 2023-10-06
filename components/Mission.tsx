@@ -3,11 +3,11 @@ import React from "react";
 
 export default function Mission() {
   return (
-    <section className="mt-[60px] px-16 lg:px-0 xl:mt-[120px]">
-      <h2 className="text-[46px] font-light leading-normal text-woa-white-400 lg:text-[64px]">
+    <section className="mx-4 mt-[60px] md:mx-16 lg:mx-0 xl:mt-[120px]">
+      <h2 className="text-4xl font-light md:leading-normal text-woa-white-400 md:text-[46px] lg:text-[64px]">
         Main Focus/Mission Statement
       </h2>
-      <div className="mt-[32px] grid grid-cols-2 content-start xl:mt-[62px]">
+      <div className="grid-cols mt-[32px] grid content-start gap-8 md:grid-cols-2 md:gap-0 xl:mt-[62px]">
         <MissionItem
           missionNumber="1"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat."
