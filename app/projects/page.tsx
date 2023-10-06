@@ -96,7 +96,7 @@ export default function Page() {
 
   const paginatedProjects = paginate(projects, p, PER_PAGE);
   return (
-    <main className="w-full bg-white px-4 pb-[120px] pt-[32px] md:px-12 md:pb-[60px] xl:px-[135px] lg:px-16 lg:pt-[64px] xl:pb-[120px] ">
+    <main className="w-full bg-white px-4 pb-[60px] pt-[32px] md:px-12 md:pb-[60px] lg:px-16 lg:pt-[64px] xl:px-[135px] xl:pb-[120px] ">
       <PageTitle>Our Projects</PageTitle>
       <section className="mt-[32px] flex flex-col gap-[32px] border-t border-t-black/10 pt-[32px] xl:gap-[60px]">
         <>
