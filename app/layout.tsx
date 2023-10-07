@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} flex justify-center bg-woa-black-700`}>
+      <body className={`${roboto.className} flex justify-center bg-gradient-to-b from-woa-black-700/90 to-woa-black-800`}>
         <div className="w-[1440px] overflow-hidden">
           <Nav />
           {children}
